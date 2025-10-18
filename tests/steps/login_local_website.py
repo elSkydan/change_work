@@ -26,3 +26,5 @@ def login(driver, firstname, secondname):
 @then("I should see the dashboard")
 def check_dashboard(driver):
     assert "Dashboard" in driver.title
+    dashboard_element = driver.find_element(By.XPATH, "/html/body/main/img")
+    assert dashboard_element.is_displayed(), "Dashboard header is not visible"

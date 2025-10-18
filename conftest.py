@@ -14,5 +14,5 @@ def driver():
 
 @pytest.fixture
 def base_url():
-    return "http://localhost:8000/index.html"
+    return "https://elskydan.github.io/free_domen/"
 

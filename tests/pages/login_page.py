@@ -7,7 +7,7 @@ class LoginPage(BasePage):
     PASSWORD = (By.ID, "secondname")
     LOGIN_BTN = (By.XPATH, "//button[text()='Enter']")
     DASHBOARD_TITLE = (By.TAG_NAME, "title")
-    BASE_URL = "http://localhost:8000/index.html"
+    BASE_URL = "http://localhost:8000/"
 
     def login(self, firstname, secondname):
         self.type(self.USERNAME, firstname)

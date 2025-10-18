@@ -17,17 +17,10 @@ def open_home(driver, base_url):
     driver.get(base_url)
 
 
-@given(parsers.parse('I login with username "{firstname}" and password "{secondname}"'))
+@when(parsers.parse('I login with firstname "{firstname}" and secondname "{secondname}"'))
 def login(driver, firstname, secondname):
     page = LoginPage(driver)
     page.login(firstname, secondname)
-
-
-#@when(parsers.parse('I login with username "{username}" and password "{password}"'))
-#def login(driver, username, password):
-#    driver.find_element(By.ID, "username").send_keys(username)
-#    driver.find_element(By.ID, "password").send_keys(password)
-#    driver.find_element(By.XPATH, "//button[text()='Enter']").click()
 
 
 @then("I should see the dashboard")

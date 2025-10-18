@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Comments</title>
+  <link rel="stylesheet" href="comments.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">My Face</h1>
+    <nav class="menu" id="MainMenu">
+      <a href="#" id="Home">Home</a>
+      <a href="#" id="Profile">Profile</a>
+      <a href="#" id="VisitLog">Visit log</a>
+      <a href="#" id="Comments" class="active">Comments</a>
+      <a href="#" id="Exit">Exit</a>
+    </nav>
+  </header>
+
+  <main class="comments-container">
+    <h2>Leave a Comment</h2>
+
+    <form id="commentForm" class="comment-form">
+      <!-- Поле Nickname больше не обязательно -->
+      <label for="nickname">Nickname (optional)</label>
+      <input type="text" id="nickname" name="nickname" placeholder="Anonymous" />
+
+      <label for="commentText">Your Comment</label>
+      <textarea id="commentText" name="commentText" maxlength="500" rows="4" placeholder="Write your comment..."></textarea>
+
+      <div class="form-actions">
+        <span id="charCount">0 / 500</span>
+        <div>
+          <button type="submit" class="submit-btn">Send</button>
+          <button type="button" id="clearForm" class="clear-btn">Clear</button>
+          <button type="button" id="clearAll" class="clear-btn danger">Clear All</button>
+        </div>
+      </div>
+    </form>
+
+    <div id="commentsList" class="comments-list"></div>
+  </main>
+
+  <!-- Toast сообщение -->
+  <div id="toast" class="toast"></div>
+
+  <script src="main_menu.js"></script>
+  <script src="comments.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Сброс и базовые стили */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Flex-контейнер для всей страницы */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    height: 10%;
+    padding: 20px 0;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main занимает всё доступное пространство между header и footer */
+main {
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+    vertical-align: center;
+}
+
+/* Footer прижат к низу */
+footer {
+    background-color: #eee;
+    padding: 20px 0;
+    text-align: center;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Visit Log</title>
+<link rel="stylesheet" href="Visitorlog.css">
+</head>
+<body>
+<header>
+     <h1 class="logo">My Face</h1>
+    <nav class="menu" id="MainMenu"> <!-- ✅ добавили id -->
+        <a href="#" id="Home">Home</a>
+        <a href="#" id="Profile">Profile</a>
+        <a href="#" id="VisitLog" class="active">Visit log</a>
+    </nav>
+</header>
+
+<main class="visitlog-container">
+    <h2>Visitors Log</h2>
+
+    <!-- Кнопка очистки лога -->
+    <button id="clearLogBtn" class="clear-btn">🗑️ Clear Log</button>
+
+    <table id="visitorsTable">
+        <thead class="table-head">
+            <tr>
+                <th>Firstname</th>
+                <th>Secondname</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Visitors will appear here -->
+        </tbody>
+    </table>
+</main>
+
+<script src="main_menu.js"></script>
+</body>
+</html>

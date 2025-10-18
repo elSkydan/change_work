@@ -1,0 +1,81 @@
+/* Общие стили страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Контейнер формы входа */
+.login-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 320px;
+    text-align: center;
+}
+
+/* Заголовок */
+.login-container h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Стили для меток */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Поля ввода */
+.login-container input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.login-container input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Кнопки */
+.login-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.login-container button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.login-container button#resetBtn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.login-container button#resetBtn:hover {
+    background-color: #495057;
+}

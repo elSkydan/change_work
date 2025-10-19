@@ -16,3 +16,9 @@ def driver():
 def base_url():
     return "https://elskydan.github.io/free_domen/"
 
+
+@pytest.fixture
+def context():
+    class Context:
+        pass
+    return Context()

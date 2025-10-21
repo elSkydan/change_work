@@ -12,9 +12,9 @@ feature_path = os.path.join(os.path.dirname(__file__), "..", "features", "login_
 scenarios(feature_path)
 
 
-@given("I am on the home page")
-def open_home(driver, base_url):
-    driver.get(base_url)
+#@given("I am on the home page")
+#def open_home(driver, base_url):
+#    driver.get(base_url)
 
 
 @given(parsers.parse('I login with username "{firstname}" and password "{secondname}"'))

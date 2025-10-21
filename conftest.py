@@ -22,3 +22,10 @@ def context():
     class Context:
         pass
     return Context()
+
+
+
+@pytest.fixture
+def user_info():
+    return {}
+

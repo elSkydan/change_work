@@ -1,4 +1,4 @@
-Feature: Login functionality
+Feature: Comments functionality
 
   Scenario Outline: Adding comment to the page
     Given I am on the home page

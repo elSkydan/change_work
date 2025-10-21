@@ -6,15 +6,20 @@ from selenium.webdriver.common.by import By
 
 from tests.pages.login_page import LoginPage
 
+
+from tests.steps.сommon_steps import *
+
+
+
 # Подключаем feature-файл
 #scenarios("features/login_local_web.feature")
 feature_path = os.path.join(os.path.dirname(__file__), "..", "features", "login_local_web.feature")
 scenarios(feature_path)
 
 
-@given("I am on the home page")
-def open_home(driver, base_url):
-    driver.get(base_url)
+#@given("I am on the home page")
+#def open_home(driver, base_url):
+#    driver.get(base_url)
 
 
 @when(parsers.parse('I login with firstname "{firstname}" and secondname "{secondname}"'))

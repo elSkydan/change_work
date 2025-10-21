@@ -4,29 +4,9 @@ from selenium.webdriver.common.by import By
 from tests.pages.base_page import BasePage
 from tests.pages.login_page import LoginPage
 from tests.pages.menu_locators import MenuLocators
-# tests/test_comments.py
 from tests.steps.сommon_steps import *
 
 scenarios("../features/test_comments_page.feature")
-
-
-#@given("I am on the home page")
-#def open_home(driver, base_url):
-#    driver.get(base_url)
-
-
-#@when(parsers.parse('I login with firstname "{firstname}" and secondname "{secondname}"'))
-#def login(driver, firstname, secondname):
- #   page = LoginPage(driver)
- #   page.login(firstname, secondname)
-
-
-@when(parsers.parse('I login with firstname "{firstname}" and secondname "{secondname}"'))
-def login(driver, firstname, secondname, user_info):
-    page = LoginPage(driver)
-    page.login(firstname, secondname)
-    user_info["firstname"] = firstname
-    user_info["secondname"] = secondname
 
 
 @when("I go to the comments page")

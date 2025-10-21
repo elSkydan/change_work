@@ -6,7 +6,7 @@ class MenuLocators(BasePage):
     MENU_LOCATORS = {
         "Home": (By.ID, "Home"),
         "Profile": (By.ID, "Profile"),
-        "Visit log": (By.ID, "Visitlog"),
+        "Visit log": (By.ID, "VisitLog"),
         "Comments": (By.ID, "Comments"),
         "Exit": (By.ID, "Exit"),
     }

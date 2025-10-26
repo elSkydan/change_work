@@ -2,7 +2,7 @@ from pytest_bdd import scenarios, given, when, then, parsers
 
 from tests.pages.login_page import LoginPage
 
-scenarios("../features/login.feature")
+scenarios("../features/test_comments_page.feature")
 
 
 @given("I am on the login page")

@@ -7,4 +7,4 @@ Feature: Login
 
     Examples:
       | firstname | secondname  |
-      | byb    | byb   |
+      | test      | test        |

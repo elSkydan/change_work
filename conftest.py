@@ -24,7 +24,6 @@ def context():
     return Context()
 
 
-
 @pytest.fixture
 def user_info():
     return {}

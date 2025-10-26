@@ -26,11 +26,11 @@ def step_go_to_visitors_page(driver):
 
 @then("I verify that log is saved")
 def verify_log_saved(driver, user_info):
+    page = VisitorLogPage(driver)
 
     firstname = user_info["firstname"]
     secondname = user_info["secondname"]
 
-
-
-
+    assert page.is_log_saved(firstname, secondname), \
+        f"Log for user {firstname} {secondname} was not found!"
 
